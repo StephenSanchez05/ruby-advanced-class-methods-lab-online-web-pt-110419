@@ -20,6 +20,7 @@ end
 
 def self.new_by_name(variable)
   song = Song.new
-  song.name
+  song.name = variable 
+end
 
 end
