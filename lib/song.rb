@@ -24,6 +24,6 @@ class Song
     song
   end
 
-  def self.create_by_name(instance_search)
+  def self.create_by_name(created)
     
 end
