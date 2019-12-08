@@ -18,9 +18,9 @@ def self.create
   song
 end
 
-def self.new_by_name(variable)
+def self.new_by_name(title)
   song = Song.new
-  song.name = "#{variable}" 
+  
 end
 
 end
