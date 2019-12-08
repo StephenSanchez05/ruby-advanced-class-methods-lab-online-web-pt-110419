@@ -8,8 +8,8 @@ def initialize(name)
 end
 
 def Song.create
-  song = Song.create
-  Song.all.include?(song)
+  song = Song.new
+  Song.save
   song
 end
   
