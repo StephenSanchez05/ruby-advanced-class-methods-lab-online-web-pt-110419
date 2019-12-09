@@ -44,11 +44,11 @@ class Song
     self.all.sort_by{|s| s.name}
   end 
   
-    def self.create_from_filename(mp3)
+    def self.new_from_filename(mp3)
     array = mp3.split( " - ")
     artist = array[0]
     title = array[1].tr(".mp3","")
-    song = self.create 
+    song = self.new 
     song.name = title 
     song.artist_name = artist 
     song
