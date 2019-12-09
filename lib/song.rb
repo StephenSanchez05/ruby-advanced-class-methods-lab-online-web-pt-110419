@@ -47,7 +47,7 @@ class Song
     def self.new_from_filename(mp3)
     array = mp3.split( " - ")
     artist = array[0]
-    title = array[1].tr(".mp3","")
+    title = array[1].gsub(".mp3","")
     song = self.new 
     song.name = title 
     song.artist_name = artist 
@@ -57,7 +57,7 @@ class Song
   def self.create_from_filename(mp3)
     array = mp3.split( " - ")
     artist = array[0]
-    title = array[1].tr(".mp3","")
+    title = array[1].gsub(".mp3","")
     song = self.create 
     song.name = title 
     song.artist_name = artist 
